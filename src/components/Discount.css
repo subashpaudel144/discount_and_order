@@ -1,0 +1,123 @@
+.discount{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-radius: 10px;
+    min-height: 100vh;
+}
+
+.discount .topbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    border-bottom: 1px solid  white;
+    
+    
+}
+
+.discount .topbar .topright li{
+    display: inline;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px white;
+}
+
+.discount .topbar .topright input{
+    height: 20px;
+    width: 250px;
+    background-color: black;
+    border: 1px white;
+    color: white;
+}
+
+.discount .topbar .topright{
+    padding-right: 20px;
+}
+
+.discount .topbar .topleft{
+    padding-left: 25px;
+}
+
+.discount .secondtop{
+    color: white;
+    display: flex;
+    margin: 30px;
+    
+}
+
+.discount .secondtop ul,li{
+    text-decoration: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 10px;
+}
+
+a:hover{
+    background-color: rgb(56, 49, 49);
+}
+
+.discount .cards{
+    margin-top: 20px;
+    color: white;
+    padding-left: 30px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 10px 0;
+}
+
+@media (max-width: 95rem){
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 80rem){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 60rem){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.discount .cards .card{
+   min-height: 28vh;
+    width: 40vh;
+    background-color: rgb(58, 42, 42);
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.discount .cards .card .cardtop,.cardmiddle,.cardbottom{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.discount .cards .card .cardtop a{
+    padding: 5px;
+    background-color: green;
+    margin-top: 5px;
+}
+
+
+
+.cardtop,.cardmiddle,.cardbottom{
+    padding: 10px;
+    justify-content: space-between;
+}
